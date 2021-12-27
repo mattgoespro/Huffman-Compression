@@ -1,8 +1,4 @@
--------------------------------------------
-CSC3022H Assignment 3 - YNGMAT005
-
-README File
--------------------------------------------
+# Huffman Compression
 
 Please note: The properly compressed binary files are
 larger than expected, since writing the number of bits
