@@ -23,9 +23,9 @@ void handleInput(int argc, char* argv[]) {
 			cout << "=============================================" << endl;
 			cout << "Huffman Tree compression program running..." << endl;
 			cout << "=============================================" << endl;
-			cout << "Input file: " << argv[1] << ".txt" << endl;
+			cout << "Input file: " << argv[1] << endl;
 			tree.set_input_file(argv[1]);
-			cout << "Output file: " << argv[2] << ".txt" << endl;
+			cout << "Output file: " << argv[2] << endl;
 			tree.set_output_file(argv[2]);
 			cout << "Loading Huffman Tree data..." << endl;
 			tree.load_data();
@@ -37,7 +37,7 @@ void handleInput(int argc, char* argv[]) {
 				cout << "Exporting code table to \"" << string(argv[2]) << ".hdr\"..." << endl;
 				tree.build_code_table(tree.get_root(), "");
 				tree.export_code_table();
-				cout << "Exporting 'compressed' data to \"" << string(argv[2]) << ".txt\"..." << endl;
+				cout << "Exporting 'compressed' data to \"" << string(argv[2]) << "\"..." << endl;
 				tree.compress_data();
 				cout << "Writing compressed bit stream to \"" << string(argv[2]) << ".bin\"..." << endl;
 				tree.write_bits();

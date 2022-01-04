@@ -15,9 +15,5 @@ huffmantree.o: huffmantree.cpp huffmantree.h
 	g++ -c huffmantree.cpp -std=c++11
 
 clean:
-	@rm -f *.o
-	@rm -f *.bin
-	@rm -f *.txt
-	@rm -f huffencode
-	@rm -f huffmantests
-	@rm -f *.hdr
+	@rm -rf generated/
+	@rm -rf build/
