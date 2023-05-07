@@ -14,4 +14,4 @@ Program Usage:
 
 The path to the folder that contains the input text file has to be specified.The program will automatically add extensions to your file names.
 
-- Example input: `<code>./huffencode test_files/test5 test5_output`
+- Example input: `./huffencode test_files/test5 test5_output`
